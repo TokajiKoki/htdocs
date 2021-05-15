@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./hello-world.js"></script>
+
+
+ <title>美容師のブログサイト</title>
+</head>
+<body>
+
+   
+    <!-- ヘッダ -->
+ <div class="PcHeader">
+    <div class="PcHeader_Inner clearfix">
+        <a href="index.html"> <img src="../img/デザイン2.png"id="LOGO"></a>
+        <a class="header-title" href="index.html">Hair View.com</a>
+    <nav class="PcHeader_Nav">
+        <ul class="PcHeader_Nav_Wrap clearfix">
+        <li class="PcHeader_Nav_List"></li>
+            <a class="TapContent -botton Tap_Transparent" href="">特集</a>
+        <li class="PcHeader_Nav_List"></li>
+            <a class="TapContent -botton Tap_Transparent" href="">編集部おすすめ</a>
+        <li class="PcHeader_Nav_List"></li>
+            <a class="TapContent -botton Tap_Transparent" href="">人気のブログ</a>
+        <li class="PcHeader_Nav_List"></li>
+            <a class="TapContent -botton Tap_Transparent" href="signup_form.php">アカウント</a>
+        <li class="PcHeader_Nav_List -Category"></li>
+
+
+        </ul>
+    </nav>
+    </div>
+    <div class="search">
+        <form action="" method="post">
+	<input type="search" name="q" value="" placeholder="キーワード"><input type="submit" name="btn_search" value="検索">
+        </form>
+    </div>
+    
+
+ </div>
+    <br>
+ 
+
+
+<div class = "top-wrapper">
+    <h2>ブログフォーム</h2>
+</div>
+<div class = "main-wrapper">
+    <form action="blog_create.php" method="POST">
+        <p>ブログタイトル：</p>
+        <input type="text" name="title">
+        <p>ブログ本文：</p>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <br>
+        <p>カテゴリ：</p>
+        <select name="category">
+            <option value="1">日常</option>
+            <option value="2">プログラミング</option>
+        </select>
+        <br>
+        <input type="radio" name="publish_status" value="1" checked>公開
+        <input type="radio" name="publish_status" value="2">非公開
+        <br>
+        <input type="submit" value="投稿">
+    </form>
+ </div>
+
+
+    <style type="text/css">
+        .top-wrapper{
+            margin-top:50px;
+            font-size:20px;
+        }
+
+        .main-wrapper p{
+            margin-top:40px;
+        }
+        
+        }
+        p{
+            margin-top:20px;
+        }
+    </style>
+    
+</body>
+</html>
